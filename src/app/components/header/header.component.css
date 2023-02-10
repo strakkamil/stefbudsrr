@@ -1,0 +1,39 @@
+header{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 150px;
+	height: 100px;
+	width: 100%;
+	background-color: #fff;
+	z-index: 2;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+}
+
+header a img{
+	height: 70px;
+}
+
+header ul{
+	display: flex;
+}
+
+header ul li {
+	list-style: none;
+	width: 180px;
+	text-align: center;
+}
+
+header ul li a{
+	font-size: 28px;
+	text-decoration: none;
+	color: #3A5A40;
+	cursor: pointer;
+	filter: brightness(1);
+	transition: .3s;
+}
+
+header ul li a:hover{
+	filter: brightness(1.5);
+}
