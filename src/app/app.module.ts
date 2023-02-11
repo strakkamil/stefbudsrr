@@ -14,6 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CooperationComponent } from './components/cooperation/cooperation.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchComponent } from './pages/portfolio/search/search.component';
+import { PorftolioElementComponent } from './pages/porftolio-element/porftolio-element.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SearchComponent } from './pages/portfolio/search/search.component';
     ContactComponent,
     CooperationComponent,
     FooterComponent,
-    SearchComponent
+    SearchComponent,
+	PorftolioElementComponent
   ],
   imports: [
     BrowserModule,
