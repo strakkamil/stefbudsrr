@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cooperation',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./cooperation.component.css']
 })
 export class CooperationComponent {
+	faAngleUp = faAngleUp
 
+	onTop() {
+		window.scrollTo(0, 0)
+	}
 }
