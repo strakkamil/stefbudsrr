@@ -1,10 +1,10 @@
 <header>
-	<a href="#">
+	<a routerLink="/">
 		<img src="../../../assets/images/logo.png" alt="#">
 	</a>
 	<ul>
-		<li><a href="#">Realizacje</a></li>
-		<li><a href="#">Kontakt</a></li>
-		<li><a href="#">Współpraca</a></li>
+		<li><a routerLink="/realizacje">Realizacje</a></li>
+		<li><a [routerLink]="['/']" fragment="contact">Kontakt</a></li>
+		<li><a [routerLink]="['/']" fragment="wspolpraca">Współpraca</a></li>
 	</ul>
 </header>

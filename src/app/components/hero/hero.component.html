@@ -1,5 +1,6 @@
 <section>
-	<img src="../../../assets/images/hero-1.jpg" alt="">
-	<h1>PPHU STEFBUD</h1>
-	<h3>Firma budowlana</h3>
+	<img [src]="path" alt="">
+	<h1>{{title}}</h1>
+	<h3>{{desc}}</h3>
+	<span (click)="toSection()"><fa-icon [icon]="faAngleDown"></fa-icon></span>
 </section>
