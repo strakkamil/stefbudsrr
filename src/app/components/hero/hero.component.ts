@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, INJECTOR, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 @Component({
@@ -8,10 +8,14 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeroComponent {
 	faAngleDown = faAngleDown
+	@Input() title?: string
+	@Input() desc?: string
+	@Input() section?: string
+	@Input() path?: string
 
 	constructor(private router: Router) {}
 
-	toAbout() {
-		this.router.navigate([], { fragment: "o-nas" });
+	toSection() {
+		this.router.navigate([], { fragment: this.section });
 	}
 }

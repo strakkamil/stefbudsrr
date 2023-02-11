@@ -13,6 +13,7 @@ import { PortfolioSectionComponent } from './components/portfolio-section/portfo
 import { ContactComponent } from './components/contact/contact.component';
 import { CooperationComponent } from './components/cooperation/cooperation.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SearchComponent } from './pages/portfolio/search/search.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     PortfolioSectionComponent,
     ContactComponent,
     CooperationComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
