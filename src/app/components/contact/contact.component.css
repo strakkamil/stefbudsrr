@@ -1,4 +1,4 @@
-section#contact{
+section.contact{
 	height: calc(100vh - 100px);
 	width: 100%;
 	background-color: #DAD7CD;
