@@ -7,8 +7,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutComponent } from './components/about/about.component';
-import { HomeComponent } from './paes/home/home.component';
-import { PortfolioComponent } from './paes/portfolio/portfolio.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { PortfolioSectionComponent } from './components/portfolio-section/portfolio-section.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { CooperationComponent } from './components/cooperation/cooperation.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { PortfolioComponent } from './paes/portfolio/portfolio.component';
     HeroComponent,
     AboutComponent,
     PortfolioComponent,
-    HomeComponent
+    HomeComponent,
+    PortfolioSectionComponent,
+    ContactComponent,
+    CooperationComponent
   ],
   imports: [
     BrowserModule,

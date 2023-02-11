@@ -11,8 +11,7 @@ export class HeroComponent {
 
 	constructor(private router: Router) {}
 
-	onClick() {
-		console.log((1))
+	toAbout() {
 		this.router.navigate([], { fragment: "about" });
 	}
 }

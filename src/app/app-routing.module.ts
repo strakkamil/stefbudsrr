@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './paes/home/home.component';
-import { PortfolioComponent } from './paes/portfolio/portfolio.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 const routes: Routes = [
 	{path: '', component: HomeComponent},
@@ -11,6 +11,7 @@ const routes: Routes = [
 const routerOptions: ExtraOptions = {
 	scrollPositionRestoration: 'enabled',
 	anchorScrolling: 'enabled',
+	scrollOffset: [0, 100]
 }
 
 @NgModule({
