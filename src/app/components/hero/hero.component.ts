@@ -12,6 +12,6 @@ export class HeroComponent {
 	constructor(private router: Router) {}
 
 	toAbout() {
-		this.router.navigate([], { fragment: "about" });
+		this.router.navigate([], { fragment: "o-nas" });
 	}
 }
