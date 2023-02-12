@@ -26,7 +26,7 @@ section.modal{
 
 .main .heading{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 	font-size: 24px;
 }

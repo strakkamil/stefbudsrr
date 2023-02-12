@@ -29,7 +29,6 @@ h3 {
 }
 
 .main-portfolio .element:hover {
-	width: 33%;
 	filter: brightness(1.2);
 }
 

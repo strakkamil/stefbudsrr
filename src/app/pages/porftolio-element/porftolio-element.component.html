@@ -7,7 +7,7 @@
 			<img src="../../../assets/images/main-1.jpg" alt="">
 		</div>
 		<div class="desc">
-			<h3>Kategoria: Kuchnia</h3>
+			<h3>Kategoria: {{realization.category}}</h3>
 			<p>Opis: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo fugiat dolor magnam vel
 				accusantium delectus corporis necessitatibus cum laboriosam non voluptatibus distinctio id ad vitae
 				maxime, velit aliquam ipsum facere!
@@ -22,23 +22,11 @@
 			</ul>
 		</div>
 	</section>
-	<section class="photos">
+	<section class="photos" *ngIf="realizationsVideo.length">
 		<h4>Filmy</h4>
 		<div class="photos-container">
-			<video controls>
-				<source src="/assets/video/main-1.MOV" type="video/mp4">
-			</video>
-			<video controls>
-				<source src="/assets/video/main-1.MOV" type="video/mp4">
-			</video>
-			<video controls>
-				<source src="/assets/video/main-1.MOV" type="video/mp4">
-			</video>
-			<video controls>
-				<source src="/assets/video/main-1.MOV" type="video/mp4">
-			</video>
-			<video controls>
-				<source src="/assets/video/main-1.MOV" type="video/mp4">
+			<video controls *ngFor="let element of realizationsVideo">
+				<source [src]="'/assets/video/' + element.src" type="video/mp4">
 			</video>
 		</div>
 	</section>
