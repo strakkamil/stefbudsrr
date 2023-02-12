@@ -24,3 +24,17 @@ footer{
 	filter: brightness(1.5);
 }
 
+@media(max-width: 1024px){
+	footer{
+		padding: 40px 40px;
+		flex-direction: column;
+	}
+
+	.copyright {
+		flex-direction: column;
+	}
+
+	.developer{
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,9 @@
+<section [ngClass]="{'show': isOpen}">
+	<span class="icon"><fa-icon [icon]="faTimes" (click)="closeHamburger()"></fa-icon></span>
+	<ul>
+		<li><a routerLink="/" (click)="closeHamburger()">Strona główna</a></li>
+		<li><a routerLink="/realizacje" (click)="closeHamburger()">Realizacje</a></li>
+		<li><a [routerLink]="['/']" fragment="kontakt" (click)="closeHamburger()">Kontakt</a></li>
+		<li><a [routerLink]="['/']" fragment="wspolpraca" (click)="closeHamburger()">Współpraca</a></li>
+	</ul>
+</section>

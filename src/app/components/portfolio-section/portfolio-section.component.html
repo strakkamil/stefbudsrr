@@ -1,24 +1,14 @@
 <section id="realizacje" class="main">
 	<h3>Realizacje</h3>
 	<section class="main-portfolio">
-		<a href="#" class="element">
-			<section>
-				<img src="../.././../assets/images/kitchen-1.jpg" alt="">
-				<div class="label">Kuchnia</div>
-			</section>
-		</a>
-		<a href="#" class="element">
-			<section>
-				<img src="../.././../assets/images/kitchen-1.jpg" alt="">
-				<div class="label">Kuchnia</div>
-			</section>
-		</a>
-		<a href="#" class="element">
-			<section>
-				<img src="../.././../assets/images/kitchen-1.jpg" alt="">
-				<div class="label">Kuchnia</div>
-			</section>
-		</a>
+		<ng-container *ngFor="let element of realizations; let i = index">	
+			<a [routerLink]="['/realizacja', i + 1]" class="element" *ngIf="element.isPromoted">
+				<section>
+					<img src="/assets/images/{{element.photos[0].src}}" alt="">
+					<div class="label">{{element.category}}</div>
+				</section>
+			</a>
+		</ng-container>
 	</section>
 	<a class="link" routerLink="/realizacje">Przejdź do naszych realizacji</a>
 </section>

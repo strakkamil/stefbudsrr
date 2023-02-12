@@ -1,4 +1,4 @@
-section{
+section {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -9,12 +9,13 @@ section{
 	color: #3A5A40;
 }
 
-section h2{
+section h2 {
 	font-size: 60px;
 	font-weight: 500;
 }
 
 section p {
+	margin: 20px 0;
 	text-align: justify;
 	font-size: 30px;
 }
@@ -26,4 +27,20 @@ section a {
 	font-weight: 700;
 	font-style: italic;
 	text-decoration: underline;
+}
+
+@media(max-width: 1024px) {
+	section {
+		padding: 40px 40px;
+		min-height: auto;
+	}
+
+	section h2 {
+		font-size: 28px;
+	}
+
+	section p,
+	section a {
+		font-size: 18px;
+	}
 }
