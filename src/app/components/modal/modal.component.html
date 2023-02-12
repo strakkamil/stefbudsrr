@@ -1,0 +1,17 @@
+<section class="modal">
+	<div class="main">
+		<section class="heading">
+			<div class="label">1/4</div>
+			<div class="times">
+				<span class="icon" (click)="closeModal()"><fa-icon [icon]="faTimes"></fa-icon></span>
+			</div>
+		</section>
+		<section class="img">
+			<img [src]="src" alt="">
+		</section>
+		<section class="navigation">
+			<span class="icon"><fa-icon [icon]="faAngleLeft" (click)="previous()"></fa-icon></span>
+			<span class="icon"><fa-icon [icon]="faAngleRight" (click)="next()"></fa-icon></span>
+		</section>
+	</div>
+</section>

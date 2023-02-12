@@ -1,0 +1,52 @@
+<app-hero [title]="'Realizacja'" [desc]="'Nasza realizacja'" section="realizacja"
+	path="../../../assets/images/hero-1.jpg"></app-hero>
+<section id="realizacja" class="element">
+	<h2>Realizacja</h2>
+	<section class="main">
+		<div class="main-img">
+			<img src="../../../assets/images/main-1.jpg" alt="">
+		</div>
+		<div class="desc">
+			<h3>Kategoria: Kuchnia</h3>
+			<p>Opis: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo fugiat dolor magnam vel
+				accusantium delectus corporis necessitatibus cum laboriosam non voluptatibus distinctio id ad vitae
+				maxime, velit aliquam ipsum facere!
+				Quod eveniet repellat doloremque eos nesciunt aut recusandae dignissimos? Numquam omnis alias quidem
+				illum! Accusantium temporibus hic nam, laboriosam quibusdam eligendi harum magnam, autem, expedita
+				dolorem inventore totam architecto aliquid!</p>
+			<p class="materials">Materiały:</p>
+			<ul>
+				<li>Drewno</li>
+				<li>Stal</li>
+				<li>Żelazo</li>
+			</ul>
+		</div>
+	</section>
+	<section class="photos">
+		<h4>Filmy</h4>
+		<div class="photos-container">
+			<video controls>
+				<source src="/assets/video/main-1.MOV" type="video/mp4">
+			</video>
+			<video controls>
+				<source src="/assets/video/main-1.MOV" type="video/mp4">
+			</video>
+			<video controls>
+				<source src="/assets/video/main-1.MOV" type="video/mp4">
+			</video>
+			<video controls>
+				<source src="/assets/video/main-1.MOV" type="video/mp4">
+			</video>
+			<video controls>
+				<source src="/assets/video/main-1.MOV" type="video/mp4">
+			</video>
+		</div>
+	</section>
+	<section class="photos">
+		<h4>Zdjęcia</h4>
+		<div class="photos-container">
+			<img *ngFor="let img of realizationsImg; let i = index" (click)="openModal(i)" [src]="'assets/images/' + img.src" [alt]="img.src">
+		</div>
+	</section>
+</section>
+<div class="back"><a [routerLink]="['/realizacje']">Powrót do realizacji</a></div>

@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { PorftolioElementComponent } from './pages/porftolio-element/porftolio-element.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 const routes: Routes = [
 	{path: '', component: HomeComponent},
-	{path: 'realizacje', component: PortfolioComponent}
+	{path: 'realizacje', component: PortfolioComponent},
+	{path: 'realizacja/:id', component: PorftolioElementComponent}
 ];
 
 const routerOptions: ExtraOptions = {
