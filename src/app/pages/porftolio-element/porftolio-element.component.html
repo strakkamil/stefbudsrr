@@ -8,17 +8,10 @@
 		</div>
 		<div class="desc">
 			<h3>Kategoria: {{realization.category}}</h3>
-			<p>Opis: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo fugiat dolor magnam vel
-				accusantium delectus corporis necessitatibus cum laboriosam non voluptatibus distinctio id ad vitae
-				maxime, velit aliquam ipsum facere!
-				Quod eveniet repellat doloremque eos nesciunt aut recusandae dignissimos? Numquam omnis alias quidem
-				illum! Accusantium temporibus hic nam, laboriosam quibusdam eligendi harum magnam, autem, expedita
-				dolorem inventore totam architecto aliquid!</p>
+			<p>Opis: {{realization.description}}</p>
 			<p class="materials">Materiały:</p>
 			<ul>
-				<li>Drewno</li>
-				<li>Stal</li>
-				<li>Żelazo</li>
+				<li *ngFor="let element of realization.materials">{{element}}</li>
 			</ul>
 		</div>
 	</section>

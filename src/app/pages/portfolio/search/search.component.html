@@ -5,14 +5,14 @@
 	<div class="filter">
 		<p>Wybierz kategorie:</p>
 		<div class="categories">
-			<button class="category active">Wszystkie</button>
-			<button class="category">Kuchnie</button>
-			<button class="category">Łazienki</button>
-			<button class="category">Sypialnie</button>
-			<button class="category">Pozostałe</button>
+			<button class="category active" data-category="Wszystkie" (click)="setCategory('Wszystkie')" #category>Wszystkie</button>
+			<button class="category" data-category="Kuchnia" (click)="setCategory('Kuchnia')" #category>Kuchnie</button>
+			<button class="category" data-category="Łazienka" (click)="setCategory('Łazienka')" #category>Łazienki</button>
+			<button class="category" data-category="Sypialnia" (click)="setCategory('Sypialnia')" #category>Sypialnie</button>
+			<button class="category" data-category="Pozostałe" (click)="setCategory('Pozostałe')" #category>Pozostałe</button>
 		</div>
 		<div class="elements">
-			<a [routerLink]="['/realizacja', i + 1]" class="element" *ngFor="let element of realizations; let i = index">
+			<a [routerLink]="['/realizacja', i + 1]" class="element" *ngFor="let element of filteredRealizations; let i = index">
 				<div class="heading">{{element.category}}</div>
 				<img [src]="'/assets/images/'+element.photos[0].src" alt="">
 				<div class="label">

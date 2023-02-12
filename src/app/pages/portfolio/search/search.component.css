@@ -115,7 +115,7 @@ button:hover {
 	color: #344E41;
 }
 
-@media(max-width: 1400px) {
+@media(max-width: 1450px) {
 	.elements {
 		grid-template-columns: repeat(2, 1fr);
 	}
