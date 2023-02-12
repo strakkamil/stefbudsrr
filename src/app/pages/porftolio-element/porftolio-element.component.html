@@ -23,20 +23,6 @@
 		</div>
 	</section>
 	<section class="photos">
-		<h4>Zdjęcia</h4>
-		<div class="photos-container">
-			<img src="assets/images/main-1.jpg" alt="">
-			<img src="/assets/images/main-2.jpg" alt="">
-			<img src="/assets/images/main-3.jpg" alt="">
-			<img src="/assets/images/main-4.jpg" alt="">
-			<img src="/assets/images/main-1.jpg" alt="">
-			<img src="/assets/images/main-2.jpg" alt="">
-			<img src="/assets/images/main-3.jpg" alt="">
-			<img src="/assets/images/main-4.jpg" alt="">
-			<img src="/assets/images/main-1.jpg" alt="">
-		</div>
-	</section>
-	<section class="photos">
 		<h4>Filmy</h4>
 		<div class="photos-container">
 			<video controls>
@@ -54,6 +40,12 @@
 			<video controls>
 				<source src="/assets/video/main-1.MOV" type="video/mp4">
 			</video>
+		</div>
+	</section>
+	<section class="photos">
+		<h4>Zdjęcia</h4>
+		<div class="photos-container">
+			<img *ngFor="let img of realizationsImg; let i = index" (click)="openModal(i)" [src]="'assets/images/' + img.src" [alt]="img.src">
 		</div>
 	</section>
 </section>

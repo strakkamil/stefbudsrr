@@ -15,6 +15,7 @@ import { CooperationComponent } from './components/cooperation/cooperation.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchComponent } from './pages/portfolio/search/search.component';
 import { PorftolioElementComponent } from './pages/porftolio-element/porftolio-element.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PorftolioElementComponent } from './pages/porftolio-element/porftolio-e
     CooperationComponent,
     FooterComponent,
     SearchComponent,
-	PorftolioElementComponent
+	PorftolioElementComponent,
+ ModalComponent
   ],
   imports: [
     BrowserModule,
