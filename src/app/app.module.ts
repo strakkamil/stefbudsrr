@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SearchComponent } from './pages/portfolio/search/search.component';
 import { PorftolioElementComponent } from './pages/porftolio-element/porftolio-element.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { HamburgerComponent } from './components/hamburger/hamburger.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ModalComponent } from './components/modal/modal.component';
     FooterComponent,
     SearchComponent,
 	PorftolioElementComponent,
- ModalComponent
+ ModalComponent,
+ HamburgerComponent
   ],
   imports: [
     BrowserModule,

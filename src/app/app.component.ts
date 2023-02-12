@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { HamburgerService } from './services/hamburger.service';
 import { ModalService } from './services/modal.service';
 
 @Component({
@@ -10,17 +11,22 @@ import { ModalService } from './services/modal.service';
 export class AppComponent implements OnInit {
   title = 'stefbud';
   isModalOpen: boolean = false
-  subsctiption?: Subscription
+  isHamburgerOpen: boolean = false
+  subsctiptionModal?: Subscription
+  subsctiptionHamburger?: Subscription
 
-  constructor(private modalService: ModalService) {}
+  constructor(private modalService: ModalService, private hamburgerService: HamburgerService) {}
 
   ngOnInit(): void {
-	this.subsctiption = this.modalService.changeIsOpen.subscribe((value) => {
+	this.subsctiptionModal = this.modalService.changeIsOpen.subscribe((value) => {
 		this.isModalOpen = value
+	})
+	this.subsctiptionHamburger = this.hamburgerService.changeIsOpen.subscribe((value) => {
+		this.isHamburgerOpen = value
 	})
   }
 
   ngOnDestroy() {
-	this.subsctiption?.unsubscribe()
+	this.subsctiptionModal?.unsubscribe()
   }
 }

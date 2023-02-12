@@ -1,4 +1,4 @@
-header{
+header {
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
@@ -11,11 +11,11 @@ header{
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
 }
 
-header a img{
+header a img {
 	height: 70px;
 }
 
-header ul{
+header ul {
 	display: flex;
 }
 
@@ -25,7 +25,7 @@ header ul li {
 	text-align: center;
 }
 
-header ul li a{
+header ul li a {
 	font-size: 28px;
 	text-decoration: none;
 	color: #3A5A40;
@@ -34,6 +34,42 @@ header ul li a{
 	transition: .3s;
 }
 
-header ul li a:hover{
+header ul li a:hover {
 	filter: brightness(1.5);
+}
+
+button {
+	background-color: transparent;
+	display: none;
+	font-size: 30px;
+	border: none;
+	color: #3A5A40;
+}
+
+@media(max-width: 1400px) {
+	header {
+		padding: 20px 50px;
+	}
+}
+
+@media(max-width: 1024px) {
+	button {
+		display: block;
+	}
+
+	header ul {
+		display: none;
+	}
+}
+
+@media(max-width: 640px) {
+	header a img{
+		height: 40px;
+	}
+}
+
+@media(max-width: 480px) {
+	header {
+		padding: 20px 20px;
+	}
 }
