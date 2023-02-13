@@ -12,7 +12,7 @@
 			<button class="category" data-category="Pozostałe" (click)="setCategory('Pozostałe')" #category>Pozostałe</button>
 		</div>
 		<div class="elements">
-			<a [routerLink]="['/realizacja', i + 1]" class="element" *ngFor="let element of filteredRealizations; let i = index">
+			<a #element [routerLink]="['/realizacja', i + 1]" class="element" *ngFor="let element of realizations; let i = index" [attr.data-category]="element.category">
 				<div class="heading">{{element.category}}</div>
 				<img [src]="'/assets/images/'+element.photos[0].src" alt="">
 				<div class="label">
