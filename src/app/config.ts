@@ -96,7 +96,7 @@ export const config = {
 		},
 		{
 			"category": 'Pozostałe',
-			"isPromoted": true,
+			"isPromoted": false,
 			"description": 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo fugiat dolor magnam vel accusantium delectus corporis necessitatibus cum laboriosam non voluptatibus distinctio id ad vitae maxime, velit aliquam ipsum facere! Quod eveniet repellat doloremque eos nesciunt aut recusandae dignissimos? Numquam omnis alias quidem illum! Accusantium temporibus hic nam, laboriosam quibusdam eligendi harum magnam, autem, expedita dolorem inventore totam architecto aliquid!',
 			"materials": ['drewno', 'stal', 'żelazo'],
 			"photos": [
