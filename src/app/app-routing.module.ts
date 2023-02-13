@@ -5,9 +5,10 @@ import { PorftolioElementComponent } from './pages/porftolio-element/porftolio-e
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 const routes: Routes = [
-	{path: '', component: HomeComponent},
-	{path: 'realizacje', component: PortfolioComponent},
-	{path: 'realizacja/:id', component: PorftolioElementComponent}
+	{ path: '', component: HomeComponent },
+	{ path: 'realizacje', component: PortfolioComponent },
+	{ path: 'realizacja/:id', component: PorftolioElementComponent },
+	{ path: '**', pathMatch: 'full', component: HomeComponent }
 ];
 
 const routerOptions: ExtraOptions = {
@@ -18,7 +19,7 @@ const routerOptions: ExtraOptions = {
 }
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, routerOptions)],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(routes, routerOptions)],
+	exports: [RouterModule]
 })
 export class AppRoutingModule { }
