@@ -1,3 +1,13 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
+	"version": 2,
+	"public": true,
+	"name": "stefbud",
+	"rewrites": [
+	  { "source": "/(.*)", "destination": "/api" }
+	],
+	"functions": {
+	  "api/index.js": {
+		"includeFiles": "dist/stefbud/browser/**"
+	  }
+	}
+  }
