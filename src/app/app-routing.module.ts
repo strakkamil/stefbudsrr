@@ -11,6 +11,7 @@ const routes: Routes = [
 ];
 
 const routerOptions: ExtraOptions = {
+	initialNavigation: 'enabledBlocking',
 	scrollPositionRestoration: 'enabled',
 	anchorScrolling: 'enabled',
 	scrollOffset: [0, 100]

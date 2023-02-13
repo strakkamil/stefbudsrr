@@ -36,7 +36,7 @@ import { HamburgerComponent } from './components/hamburger/hamburger.component';
  HamburgerComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FontAwesomeModule
   ],

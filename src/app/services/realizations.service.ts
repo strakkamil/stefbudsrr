@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { config } from '../config';
+import config from '../../../dist/config.json';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class RealizationsService {
-	realizations = config.realizations
+	realizations = config
+	// realizations = []
 
 	getRealizations() {
 		return this.realizations
