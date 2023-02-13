@@ -11,7 +11,7 @@
     "serve:ssr": "node dist/stefbud/server/main.js",
     "build:ssr": "ng build && ng run stefbud:server",
     "prerender": "ng run stefbud:prerender",
-    "vercel-build": "npm run build:ssr"
+    "vercel-build": "ng build --configuration production && ng run stefbud:server"
   },
   "private": true,
   "dependencies": {
